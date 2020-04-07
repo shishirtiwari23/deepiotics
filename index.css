@@ -8,11 +8,10 @@
 .opacity-0{
     display:none;
 }
+/*Nav Mobile Starts*/
 .navMobile{
     display:none;
 }
-/*Nav Mobile Starts*/
-
 /*Nav  Mobile Ends*/
 .image-logo{
     width: 30%;
@@ -40,12 +39,6 @@
 #particles-js:hover{
     opacity: 90%;
 }
-.logo-container{
-    display: flex;
-}
-#logo-container{
-    flex: 1;
-}
 #logo-container-image{
     opacity: 0;
     transition: 0.3s ease;
@@ -65,10 +58,6 @@
     z-index: 10000;/*Very Important Dont Remove Or Change Otherwise Nav will not work}*/
 nav{
     flex: 1;
-}
-.nav-links{
-    list-style: none;
-    justify-content: space-around;
 }
 .nav-link{
     text-decoration: none;
@@ -186,7 +175,6 @@ main{
     display:grid;
     grid-template-columns: repeat(10,minmax(50px,auto));
     list-style: none;
-    background-image: linear-gradient(to right,#001C82 ,#091035);
     grid-template-rows: 40px;
     grid-template-areas: 
     " logo . . . . about services solution case blog "
@@ -637,91 +625,83 @@ hr{
         display:none;
     } 
     /*Nav Mobile Starts*/
-.navMobile{
-    background-image: linear-gradient(to right, blue, black);
-    display: flex;
-    justify-content: center;
-    height: 8vh;
-    align-items: center;
-    color: white;
-    z-index:100000;
-    position:fixed;
-    width:100%;
-}
-.nav-link{
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-}
-
-.logo-container{
-    flex: 1;
-    padding: 10px;
-}
-.burger{
-    display: none;
-    cursor: pointer;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.5s ease;
-    opacity: 0;
-}
+    
+    .nav-link{
+        color: rgb(197, 197, 197);
+        text-decoration: none;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+    .nav-link:hover{
+        color:white;
+    }
+    .logo-container{
+        flex: 1;
+        padding: 10px;
+    }
+    .navMobile{
+        display:contents;
+    }
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
     html,body{
         overflow-x: hidden;
     }
-    .nav-links{
+    .nav-link{
         transform: translateX(100%);
     }
+    .nav{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        color:white;
+        background-image: linear-gradient(to right,#001C82 ,#091035);
+        height:60px;
+        z-index:9999;
+    }
     .nav-links{
+        transform: translateX(200%);
+    }
+    .nav .logo{
+        position:absolute;
+        padding:10px;
+    }
+    .nav .burger{
+        position:absolute;
+        right:10px;
+        pointer-events:all;
+        z-index:100000;
+        top:15px;
+        cursor:pointer;
+    }
+    .nav-links{
+        display:grid;
+        width: 60%;
         position: fixed;
         right: 0;
-        top: 8vh;  
-        height: 92vh;
-        display:flex;
-        flex-direction:column;
-        background-color:black;
+        height: calc(100% - 60px);
+        top: 60px;
+        background-image: linear-gradient(to right,rgb(46, 45, 45) ,#222424);
         opacity:1;
+        justify-items:center;
         align-items: center;
-        width: 50%;
         transition: transform 0.5s ease-in;
     }
-    .nav-links .mainListM a{
-        color:rgb(160, 153, 153);
-        text-decoration:none;
-    }
-    .nav-links .mainListM a:hover{
-        color:white;
-    }
-    .nav-links .mainListM{
-        display:grid;
-        color:white;
-        grid-template-areas:
-        "logoM"
-        "aboutM"
-        "servicesM"
-        "solutionM"
-        "caseM"
-        "blogM"
-        ;
-        grid-template-rows:repeat(10,50px);
-        list-style:none;
-    }
-
     .nav-link{
         opacity: 0;
     }
     .burger div{
         opacity: 1;
     }
-    .burger{
-        display: block;
-    }
+    
 }
 .nav-active{
     transform: translateX(0%);
@@ -746,14 +726,13 @@ hr{
 
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
-}
-/*Nav Mobile Ends*/
+}    
+    /*Nav Mobile Ends*/
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-}
 @media screen and (max-width : 1024px) {
     main{
         flex-direction: column;
@@ -761,9 +740,6 @@ hr{
     }
     main h1{
         font-size: 60px;
-    }
-    .nav-links{
-        display: none;
     }
     .para{
         width: 70%;

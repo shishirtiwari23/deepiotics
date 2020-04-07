@@ -10,44 +10,31 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
 </head>
 <body>  
         <header>   
             <!--Nav Bar Starts-->
             <!--Nav For Mobile Starts-->
-            <nav  class="navMobile">
-                <div class="logo-container">
-                    <h3>Logo</h3>
+            <nav class="navMobile">
+                <div style="z-index:1000;;"class="nav-links" id="mob-menu">
+                    <div style="width:100%;"class="logo-container">
+                        <img src="logo.png" alt="" class="logo-container-img">
+                    </div>
+                        <a href="aboutus.html" class="nav-link">About Us</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="solution.html" class="nav-link">Solution</a>
+                        <a href="contactus.html" class="nav-link">Contact Us</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
                 </div>
-                <div style="z-index: 1000;"class="nav-links">
-                        <ul class="mainListM">
-                            <li>
-                                <div style="grid-area: logoM;" id="logo-containerM">
-                                    <img style="z-index: 10000;"id="logo-container-imageM" src="logo.png" alt="logo">
-                                </div>
-                            </li>
-                            <li style="grid-area: aboutM;" class="aboutM">
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li  style="grid-area: servicesM;"class="navServicesM">
-                                <a href="services.html">Services</a>
-                            </li>
-                            <li style="grid-area: solutionM;"class="solutionM">
-                                <a href="solution.html">Solution</a>
-                            </li>
-                            <li style="grid-area:caseM;"class="caseM">
-                                <a href="case.html">Contact Us</a>
-                            </li>
-                            <li style="grid-area:blogM;"class="blogM">
-                                <a href="blog.html">Blog</a>
-                            </li>
-                        </ul>
-                </div>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                <div class="nav">
+                    <div class="logo" id="logo-container">
+                        <img id="logo-container-image" src="logo.png" alt="logo">
+                    </div>
+                    <div  class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                 </div>
             </nav>
             <script src="app.js" type="text/JavaScript"></script>
@@ -609,3 +596,37 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!--
+<div style="z-index:10000;"class="nav-links">
+    <div style="width:100%;"class="logo-container">
+        <img src="logo.png" alt="" class="logo-container-img">
+    </div>
+    <div class="aboutus">
+        <a href="aboutus.html" class="nav-link">About Us</a>
+    </div>
+    <div class="services">
+        <a href="services.html" class="nav-link">Services</a>
+    </div>
+    <div class="solution">
+        <a href="solution.html" class="nav-link">Solution</a>
+    </div>
+    <div class="contactus">
+        <a href="contactus.html" class="nav-link">Contact Us</a>
+    </div>
+    <div class="blog">
+        <a href="blog" class="nav-link">Blog</a>
+    </div>
+</div>
+<div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>-->
