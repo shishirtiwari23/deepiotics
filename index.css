@@ -687,7 +687,7 @@ hr{
         width: 60%;
         position: fixed;
         right: 0;
-        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
         top: 60px;
         background-image: linear-gradient(to right,rgb(46, 45, 45) ,#222424);
         opacity:1;
