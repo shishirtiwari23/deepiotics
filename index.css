@@ -689,6 +689,7 @@ hr{
         position: fixed;
         right: 0;
         min-height: calc(100vh - 60px);
+        grid-template-rows: repeat(6,minmax(50px,auto));
         max-height: fit-content;
         top: 60px;
         background-image: linear-gradient(to right,rgb(46, 45, 45) ,#222424);
