@@ -684,10 +684,12 @@ hr{
     }
     .nav-links{
         display:grid;
-        width: 60%;
+        width: 100%;
+        text-align:center;
         position: fixed;
         right: 0;
-        min-height: calc(100% - 60px);
+        min-height: calc(100vh - 60px);
+        max-height: fit-content;
         top: 60px;
         background-image: linear-gradient(to right,rgb(46, 45, 45) ,#222424);
         opacity:1;
